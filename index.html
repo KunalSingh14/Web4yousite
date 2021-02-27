@@ -8,26 +8,28 @@
   <title>Web.For.You</title>
 </head>
 
-<body>
+<body onload="firstset()">
   <!-- Header -->
   <section id="header">
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero">
-            <h1><span>W</span>eb. <span>F</span>or .<span>Y</span>ou</h1>
-          </a>
-        </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
+          <div class="grow">
+              <a href="#hero">
+                <h1><span>W</span>eb. <span>F</span>or .<span>Y</span>ou</h1>
+              </a>
           </div>
+        </div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
           <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#members" data-after="Members">Members</a></li>
-            <li><a href="#blogs" data-after="Blogs">Blogs</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li class="grow"><a href="#hero" data-after="Home"><b>Home</b></a></li>
+            <li class="grow"><a href="#about" data-after="About"><b>About</b></a></li>
+            <li class="grow"><a href="#members" data-after="Members"><b>Members</b></a></li>
+            <li class="grow"><a href="#blogs" data-after="Blogs"><b>Blogs</b></a></li>
+            <li class="grow"><a href="#contact" data-after="Contact"><b>Contact</b></a></li>
           </ul>
         </div>
       </div>
@@ -44,8 +46,8 @@
         <h1>Web <span></span></h1>
         <h1>Developers <span></span></h1>
         <a href="#projects" type="button" class="cta">Projects</a>
-      </div>
-    </div>
+          </div>
+          </div>
   </section>
   <!-- End Hero Section  -->
 
@@ -58,7 +60,9 @@
         </div>
       </div>
       <div class="col-right">
+        <div class="grow">
         <h1 class="section-title">About <span>Us</span></h1>
+        </div>
         <h2>Web Community</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, velit alias eius non illum beatae atque
           repellat ratione qui veritatis repudiandae adipisci maiores. At inventore necessitatibus deserunt
@@ -75,80 +79,145 @@
 
   <!-- Projects Section -->
   <section id="projects">
-    <div class="projects container">
-        <div class="projects-header">
-          <h1 class="section-title">Recent <span>Projects</span></h1>
-        </div>
-        <div class="all-projects">
+    <div class="grow">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span> Projects</span></h1>
+      </div>
+    </div>
+    <div class="slideshow-container">
+    
+      <div class="mySlides fade">
+        <div class="numbertext">Project 1</div>
+        <img src="./img/project1.jpg" style="width:100%">
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, eveniet?</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">Project 2</div>
+        <img src="./img/project2.jpg" style="width:100%">
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, fugiat.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">Project 3</div>
+        <img src="https://xobin.com/wp-content/uploads/2020/04/software-developer-vs-software-engineer-illustration.jpg" style="width:100%">
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, iure!</div>
+      </div>
+    
+      <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)" id="np"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- <div class="projects container">
+      <div class="grow">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span> Projects</span></h1>
+      </div>
+      </div>
+      <div class="all-projects">
 
         <div class="flex-container">
 
-            <div class="flex-child magenta">
-                    <!-- Sidebar -->
-            <h1>Have a glimpse ...</h1>
+          <div class="flex-child magenta"> -->
+            <!-- Sidebar -->
+            <!-- <div class="w3-content w3-display-container">
+              <img class="mySlides" src="C:\Users\KS401\Desktop\Web4yousite\img" alt="img">
+              <img class="mySlides" src="C:\Users\KS401\Desktop\Web4yousite\img" alt="img">
+              <img class="mySlides" src="C:\Users\KS401\Desktop\Web4yousite\img" alt="img">
+              <div class="w3-center w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+                <span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+              </div>
+            </div> -->
+            <!-- <h1>Have a glimpse ...</h1>
             <div class="sidebar" style="width:75%">
-                <div class="project-item">
-                    <div class="project-info">
-                      <h1>Project 1</h1>
-                      <h2>Coding is Love</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                        rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                        harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                      <img src="./img/project2.jpg" alt="img">
-                    </div>
+              <div class="project-item">
+                <div class="project-info">
+                  <h1>Project 1</h1>
+                  <h2>Coding is Love</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit
+                    unde
+                    rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero
+                    non sunt
+                    harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
                 </div>
-                <div class="project-item">
-                    <div class="project-info">
-                      <h1>Project 2</h1>
-                      <h2>Coding is Love</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                        rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                        harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                      <img src="./img/project2.jpg" alt="img">
-                    </div>
+                <div class="project-img">
+                  <img src="./img/project2.jpg" alt="img">
                 </div>
-                <div class="project-item">
-                    <div class="project-info">
-                      <h1>Project 3</h1>
-                      <h2>Coding is Love</h2>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                        rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                        harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-                    </div>
-                    <div class="project-img">
-                      <img src="./img/project2.jpg" alt="img">
-                    </div>
+              </div>
+              <div class="project-item">
+                <div class="project-info">
+                  <h1>Project 2</h1>
+                  <h2>Coding is Love</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit
+                    unde
+                    rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero
+                    non sunt
+                    harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
                 </div>
+                <div class="project-img">
+                  <img src="./img/project2.jpg" alt="img">
+                </div>
+              </div>
+              <div class="project-item">
+                <div class="project-info">
+                  <h1>Project 3</h1>
+                  <h2>Coding is Love</h2>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit
+                    unde
+                    rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero
+                    non sunt
+                    harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+                </div>
+                <div class="project-img">
+                  <img src="./img/project2.jpg" alt="img">
+                </div>
+              </div>
 
-            </div> 
             </div>
+          </div>-->
 
-            <div class="flex-child green">
-                  <h1>2k Views on our Project</h1><!--Most liked project -->
-                  <div class="rightside" id ="rightside"style="margin-left:1%">
-                    <img src="https://xobin.com/wp-content/uploads/2020/04/software-developer-vs-software-engineer-illustration.jpg" alt="webd" style="width:100%">
-                        <h1 style ="text-align:center">most watched</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                            rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                            harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
-                                rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt
-                                harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-                        <p>To develope the same have a <a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ MORE</a></p>
-                  </div>
+          <!-- <div class="flex-child green"> 
+            <h1>2k Views on our Project</h1>
+            Most liked project
+            <div class="rightside" id="rightside" style="margin-left:1%">
+              <img
+                src="https://xobin.com/wp-content/uploads/2020/04/software-developer-vs-software-engineer-illustration.jpg"
+                alt="webd" style="width:100%">
+              <h1 style="text-align:center">most watched</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+                rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non
+                sunt
+                harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde
+                rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non
+                sunt
+                harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+              <p>To develope the same have a <a href="https://miro.medium.com/max/640/1*K2iFkHhIjhV-f9bkE3ZhJg.png">READ
+                  MORE</a></p>
             </div>
-                
-            </div>
+          </div> -->
 
-        </div>
+        <!-- </div>
+
       </div>
+    </div> -->
+    <div>
+      &nbsp;
+    </div>
   </section>
-  <!-- End Projects Section --> 
-      
+  <!-- End Projects Section -->
+
   <!-- End Contact Section -->
 
   <!-- Footer -->
@@ -168,12 +237,17 @@
         <div class="social-item">
           <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png" /></a>
         </div>
-      
+
       </div>
     </div>
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
+  <script>
+    function firstset() {
+      document.getElementById('np').click();
+    }
+  </script>
 </body>
 
 </html>
